@@ -6,7 +6,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class ExceptionTest {
 
     @Test
-    public void testPulsarExceptionWithParameters() {
+    public void testExceptionWithParameters() {
 
         String key = "123";
         String value = "abc";
@@ -17,7 +17,7 @@ public class ExceptionTest {
     }
 
     @Test
-    public void testPulsarExceptionSimple() {
+    public void testExceptionSimple() {
 
         SampleException testException =
                 new SampleException("Simple Message");
@@ -25,7 +25,7 @@ public class ExceptionTest {
     }
 
     @Test
-    public void testPulsarExceptionCompound() {
+    public void testExceptionCompound() {
 
         int key = 123;
         String value = "abc";
